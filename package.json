@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@6.11.0",
+  "description": "ChuHoMan eslint-config",
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/ChuHoMan/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChuHoMan/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChuHoMan/eslint-config/issues"
+  },
+  "keywords": [],
+  "scripts": {
+    "lint": "eslint . --fix",
+    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "devDependencies": {
+    "@chuhoman/eslint-config-basic": "*",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.23.0",
+    "eslint-define-config": "^1.5.1",
+    "typescript": "^4.8.2"
+  }
+}
