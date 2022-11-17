@@ -1,4 +1,4 @@
-const { defineConfig } = require('eslint-define-config')
+const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
   env: {
@@ -186,7 +186,7 @@ module.exports = defineConfig({
     'import/no-absolute-path': 'off',
 
     // Common
-    'semi': ['error', 'never'],
+    'semi': ['error', 'always'],
     'curly': ['error', 'multi-or-nest', 'consistent'],
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
@@ -337,4 +337,4 @@ module.exports = defineConfig({
     'yml/quotes': ['error', { prefer: 'single', avoidEscape: false }],
     'yml/no-empty-document': 'off',
   },
-})
+});

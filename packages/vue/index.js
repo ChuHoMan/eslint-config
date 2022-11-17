@@ -1,5 +1,5 @@
 // base on @antfu/eslint-config-vue
-const { defineConfig } = require('eslint-define-config')
+const { defineConfig } = require('eslint-define-config');
 
 module.exports = defineConfig({
   overrides: [
@@ -92,4 +92,4 @@ module.exports = defineConfig({
     'vue/space-unary-ops': ['error', { words: true, nonwords: false }],
     'vue/template-curly-spacing': 'error',
   },
-})
+});
