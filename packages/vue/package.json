@@ -2,7 +2,7 @@
   "name": "@chuhoman/eslint-config-vue",
   "version": "0.0.1",
   "description": "ChuHoMan eslint-config-vue",
-  "author": "",
+  "author": "chuhoman",
   "license": "MIT",
   "homepage": "https://github.com/ChuHoMan/eslint-config#readme",
   "repository": {

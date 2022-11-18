@@ -2,7 +2,7 @@
   "name": "@chuhoman/eslint-config-typescript",
   "version": "0.0.1",
   "description": "ChuHoMan eslint-config-typescript",
-  "author": "",
+  "author": "chuhoman",
   "license": "MIT",
   "homepage": "https://github.com/ChuHoMan/eslint-config#readme",
   "repository": {

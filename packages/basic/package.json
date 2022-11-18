@@ -2,7 +2,7 @@
   "name": "@chuhoman/eslint-config-basic",
   "version": "0.0.1",
   "description": "ChuHoMan eslint-config-basic",
-  "author": "ChuHoMan",
+  "author": "chuhoman",
   "license": "MIT",
   "homepage": "https://github.com/ChuHoMan/eslint-config#readme",
   "repository": {

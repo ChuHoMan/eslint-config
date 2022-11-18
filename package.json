@@ -4,7 +4,7 @@
   "private": true,
   "packageManager": "pnpm@6.11.0",
   "description": "ChuHoMan eslint-config",
-  "author": "",
+  "author": "chuhoman",
   "license": "MIT",
   "homepage": "https://github.com/ChuHoMan/eslint-config#readme",
   "repository": {
