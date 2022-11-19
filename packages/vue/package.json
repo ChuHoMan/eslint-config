@@ -1,6 +1,6 @@
 {
   "name": "@chuhoman/eslint-config-vue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ChuHoMan eslint-config-vue",
   "author": "chuhoman",
   "license": "MIT",
