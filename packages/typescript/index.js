@@ -18,7 +18,6 @@ module.exports = defineConfig({
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'off',
-    '@typescript-eslint/await-thenable': 'error',
     '@typescript-eslint/ban-ts-comment': 'error',
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/ban-types': 'error',
@@ -37,7 +36,7 @@ module.exports = defineConfig({
         constructors: 'no-public',
       },
     }],
-    '@typescript-eslint/explicit-module-boundary-types': 'error',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/member-delimiter-style': ['error', {
       multiline: {
         delimiter: 'none',
@@ -53,12 +52,6 @@ module.exports = defineConfig({
       classExpressions: ['public-instance-method', 'public-static-field'],
     }],
     '@typescript-eslint/method-signature-style': ['error', 'method'],
-    '@typescript-eslint/naming-convention': ['error', {
-      selector: ['variable', 'function', 'objectLiteralMethod', 'parameterProperty', 'classProperty'],
-      format: ['strictCamelCase', 'UPPER_CASE'],
-      leadingUnderscore: 'allow',
-      trailingUnderscore: 'allow',
-    }],
     '@typescript-eslint/no-base-to-string': 'off',
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-confusing-void-expression': 'off',
@@ -67,9 +60,6 @@ module.exports = defineConfig({
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'off',
-    '@typescript-eslint/no-floating-promises': ['error', {
-      ignoreVoid: false,
-    }],
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-implicit-any-catch': 'off',
     '@typescript-eslint/no-inferrable-types': ['error', {
@@ -78,10 +68,6 @@ module.exports = defineConfig({
     }],
     '@typescript-eslint/no-invalid-void-type': 'error',
     '@typescript-eslint/no-misused-new': 'error',
-    '@typescript-eslint/no-misused-promises': ['error', {
-      checksConditionals: true,
-      checksVoidReturn: true,
-    }],
     '@typescript-eslint/no-namespace': ['error', {
       allowDeclarations: true,
     }],
@@ -93,21 +79,15 @@ module.exports = defineConfig({
       allowDestructuring: true,
     }],
     '@typescript-eslint/no-type-alias': 'off',
-    '@typescript-eslint/no-unnecessary-boolean-literal-compare': ['error', {
-      allowComparingNullableBooleansToTrue: false,
-      allowComparingNullableBooleansToFalse: false,
-    }],
     '@typescript-eslint/no-unnecessary-condition': 'off',
     '@typescript-eslint/no-unnecessary-qualifier': 'off',
     '@typescript-eslint/no-unnecessary-type-arguments': 'off',
-    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/non-nullable-type-assertion-style': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-enum-initializers': 'off',
     '@typescript-eslint/prefer-for-of': 'error',
@@ -116,7 +96,6 @@ module.exports = defineConfig({
     '@typescript-eslint/prefer-literal-enum-member': 'error',
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
-    '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/prefer-readonly': 'off',
     '@typescript-eslint/prefer-readonly-parameter-types': 'off',
     '@typescript-eslint/prefer-reduce-type-parameter': 'off',
@@ -145,9 +124,6 @@ module.exports = defineConfig({
       variableDeclaration: false,
       variableDeclarationIgnoreFunction: false,
     }],
-    '@typescript-eslint/unbound-method': ['error', {
-      ignoreStatic: true,
-    }],
     '@typescript-eslint/unified-signatures': 'error',
     'no-array-constructor': 'off',
     '@typescript-eslint/no-array-constructor': 'off',
@@ -156,6 +132,31 @@ module.exports = defineConfig({
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/require-await': 'off',
+
+    // off
+    // '@typescript-eslint/unbound-method': ['error', {
+    //   ignoreStatic: true,
+    // }],
+    // '@typescript-eslint/prefer-optional-chain': 'error',
+    // '@typescript-eslint/non-nullable-type-assertion-style': 'error',
+    // '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    // '@typescript-eslint/no-unnecessary-boolean-literal-compare': ['error', {
+    //   allowComparingNullableBooleansToTrue: false,
+    //   allowComparingNullableBooleansToFalse: false,
+    // }],
+    // '@typescript-eslint/no-misused-promises': ['error', {
+    //   checksConditionals: true,
+    //   checksVoidReturn: true,
+    // }],
+    // '@typescript-eslint/no-floating-promises': ['error', {
+    //   ignoreVoid: false,
+    // }],
+    // '@typescript-eslint/naming-convention': ['error', {
+    //   selector: ['variable', 'function', 'objectLiteralMethod', 'parameterProperty', 'classProperty'],
+    //   format: ['strictCamelCase', 'UPPER_CASE'],
+    //   leadingUnderscore: 'allow',
+    //   trailingUnderscore: 'allow',
+    // }],
 
     // import
     'import/order': 'error',
