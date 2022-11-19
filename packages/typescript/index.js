@@ -1,4 +1,5 @@
 const { defineConfig } = require('eslint-define-config');
+const basic = require('@chuhoman/eslint-config-basic');
 
 module.exports = defineConfig({
   parser: '@typescript-eslint/parser',
@@ -8,6 +9,8 @@ module.exports = defineConfig({
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
   ],
+
+  overrides: basic.overrides,
 
   settings: {
     'import/resolver': {
