@@ -1,6 +1,6 @@
 {
   "name": "eslint-config",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "packageManager": "pnpm@6.11.0",
   "description": "ChuHoMan eslint-config",
