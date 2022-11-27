@@ -20,7 +20,6 @@ module.exports = defineConfig({
     'vue/no-v-html': 'off',
     'vue/require-prop-types': 'off',
     'vue/require-default-prop': 'off',
-    'vue/multi-word-component-names': 'off',
     'vue/prefer-import-from-vue': 'off',
 
     // reactivity transform
