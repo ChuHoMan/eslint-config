@@ -33,7 +33,10 @@ module.exports = defineConfig({
       singleline: 'always',
       multiline: 'always',
     }],
-    'vue/component-name-in-template-casing': ['error', 'PascalCase'],
+    'vue/component-name-in-template-casing': ['error', 'kebab-case', {
+      registeredComponentsOnly: true,
+      ignores: [],
+    }],
     'vue/component-options-name-casing': ['error', 'PascalCase'],
     'vue/custom-event-name-casing': ['error', 'camelCase'],
     'vue/define-macros-order': ['error', {
