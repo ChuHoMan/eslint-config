@@ -1,6 +1,6 @@
 {
   "name": "@chuhoman/eslint-config-typescript",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "ChuHoMan eslint-config-typescript",
   "author": "chuhoman",
   "license": "MIT",
