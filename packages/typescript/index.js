@@ -110,7 +110,7 @@ module.exports = defineConfig({
     '@typescript-eslint/restrict-plus-operands': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/sort-type-union-intersection-members': 'off',
-    '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/type-annotation-spacing': ['error', {
@@ -133,7 +133,7 @@ module.exports = defineConfig({
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-implied-eval': 'off',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/require-await': 'off',
 
     // off

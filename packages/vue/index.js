@@ -16,15 +16,22 @@ module.exports = defineConfig({
     '@chuhoman/eslint-config-typescript',
   ],
   rules: {
-    'vue/max-attributes-per-line': 'off',
+    'vue/max-attributes-per-line': ['error', {
+      singleline: {
+        max: 4,
+      },
+      multiline: {
+        max: 1,
+      },
+    }],
     'vue/no-v-html': 'off',
     'vue/require-prop-types': 'off',
     'vue/require-default-prop': 'off',
     'vue/prefer-import-from-vue': 'off',
     'vue/multi-word-component-names': 'off',
 
-    // reactivity transform
-    'vue/no-setup-props-destructure': 'off',
+    // I don't use reactivity transform by default
+    'vue/no-setup-props-destructure': 'error',
 
     'vue/component-tags-order': ['error', {
       order: ['script', 'template', 'style'],
@@ -55,7 +62,7 @@ module.exports = defineConfig({
     'vue/array-bracket-spacing': ['error', 'never'],
     'vue/arrow-spacing': ['error', { before: true, after: true }],
     'vue/block-spacing': ['error', 'always'],
-    'vue/brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
+    'vue/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'vue/comma-dangle': ['error', 'always-multiline'],
     'vue/comma-spacing': ['error', { before: false, after: true }],
     'vue/comma-style': ['error', 'last'],
