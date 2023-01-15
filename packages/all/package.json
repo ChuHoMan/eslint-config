@@ -1,6 +1,6 @@
 {
   "name": "@chuhoman/eslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "ChuHoMan eslint-config",
   "author": "chuhoman",
   "license": "MIT",
@@ -12,7 +12,9 @@
   "bugs": {
     "url": "https://github.com/ChuHoMan/eslint-config/issues"
   },
-  "keywords": ["eslint-config"],
+  "keywords": [
+    "eslint-config"
+  ],
   "main": "index.js",
   "files": [
     "index.js"
