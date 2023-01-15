@@ -3,19 +3,19 @@
 [![npm](https://img.shields.io/npm/v/@chuhoman/eslint-config?color=91B2D4&label=)](https://npmjs.com/package/@chuhoman/eslint-config)
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/ChuHoMan/eslint-config/blob/main/README.zh-CN.md">简体中文</a>
+<a href="https://github.com/ChuHoMan/eslint-config/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
 
 
-## Usage
+## 使用
 
-### Install
+### 安装
 
 ```bash
 # pnpm
 pnpm install -D eslint @chuhoman/eslint-config
 ```
-### Config `.eslintrc`
+### 配置 `.eslintrc`
 
 ```json
 {
@@ -23,9 +23,9 @@ pnpm install -D eslint @chuhoman/eslint-config
 }
 ```
 
-### Add script for package.json
+### 在 package.json 中添加 scripts
 
-For example:
+示例:
 
 ```json
 {
@@ -36,9 +36,9 @@ For example:
 }
 ```
 
-### Config VS Code auto fix
+### 配置 VS Code 自动修复代码
 
-Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and create `.vscode/settings.json`
+安装 [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) 然后创建 `.vscode/settings.json`
 
 ```json
 {
