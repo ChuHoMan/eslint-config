@@ -187,7 +187,6 @@ module.exports = defineConfig({
 
     // Common
     'semi': ['error', 'always'],
-    'curly': ['error', 'multi-or-nest', 'consistent'],
     'quotes': ['error', 'single'],
     'quote-props': ['error', 'consistent-as-needed'],
     'no-unused-vars': 'error',
