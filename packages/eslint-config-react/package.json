@@ -1,6 +1,6 @@
 {
   "name": "@chuhoman/eslint-config-react",
-  "version": "0.0.10",
+  "version": "0.1.0",
   "description": "ChuHoMan eslint-config-react",
   "author": "chuhoman",
   "license": "MIT",
@@ -32,4 +32,3 @@
     "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
-
