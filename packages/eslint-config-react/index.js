@@ -18,6 +18,9 @@ module.exports = defineConfig({
     'jsx-quotes': ['error', 'prefer-double'],
     'react/react-in-jsx-scope': 'off',
     'react-hooks/exhaustive-deps': 'off',
+    
+    // ts
+    '@typescript-eslint/explicit-member-accessibility': 'off'
   },
   settings: {
     react: {
