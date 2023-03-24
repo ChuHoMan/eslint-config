@@ -2,7 +2,7 @@
   "name": "eslint-config",
   "version": "0.0.10",
   "private": true,
-  "packageManager": "pnpm@6.11.0",
+  "packageManager": "pnpm@7.23.0",
   "description": "ChuHoMan eslint-config",
   "author": "chuhoman",
   "license": "MIT",
