@@ -1,5 +1,5 @@
 const { defineConfig } = require('eslint-define-config');
-const basic = require('@chuhoman/eslint-config-basic');
+const basic = require('../eslint-config-basic');
 
 module.exports = defineConfig({
   parser: '@typescript-eslint/parser',

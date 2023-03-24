@@ -1,0 +1,35 @@
+{
+  "name": "@chuhoman/eslint-config-react",
+  "version": "0.0.10",
+  "description": "ChuHoMan eslint-config-react",
+  "author": "chuhoman",
+  "license": "MIT",
+  "homepage": "https://github.com/ChuHoMan/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChuHoMan/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ChuHoMan/eslint-config/issues"
+  },
+  "keywords": [
+    "eslint-config"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "eslint": ">=7.4.0",
+    "typescript": ">=3.9"
+  },
+  "dependencies": {
+    "@chuhoman/eslint-config-typescript": "workspace:*",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  }
+}
+
