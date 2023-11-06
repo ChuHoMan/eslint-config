@@ -1,5 +1,6 @@
 {
-  "name": "eslint-config",
+  "name": "@chuhoman/eslint-config",
+  "type": "module",
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@7.23.0",
@@ -15,15 +16,63 @@
     "url": "https://github.com/ChuHoMan/eslint-config/issues"
   },
   "keywords": [],
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --clean --dts",
+    "stub": "tsup src/index.ts --format esm",
+    "dev": "tsup src/index.ts --format esm,cjs --watch & eslint-flat-config-viewer",
     "lint": "eslint . --fix",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "prepublishOnly": "pnpm run build",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp package.json --commit --push --tag && pnpm publish --access public"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.40.0"
+  },
+  "dependencies": {
+    "@chuhoman/eslint-config": "^0.1.0",
+    "@stylistic/eslint-plugin": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint-config-flat-gitignore": "^0.1.1",
+    "eslint-define-config": "^1.24.1",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-html": "^7.1.0",
+    "eslint-plugin-i": "^2.29.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsonc": "^2.10.0",
+    "eslint-plugin-markdown": "^3.0.1",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-no-only-tests": "^3.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-unicorn": "^43.0.2",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "eslint-plugin-vitest": "^0.3.9",
+    "eslint-plugin-vue": "^9.18.1",
+    "eslint-plugin-yml": "^1.10.0",
+    "globals": "^13.23.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "local-pkg": "^0.5.0",
+    "yaml-eslint-parser": "^1.2.2"
   },
   "devDependencies": {
-    "@chuhoman/eslint-config-basic": "*",
+    "@types/node": "^20.8.10",
     "bumpp": "^8.2.1",
-    "eslint": "^8.23.0",
-    "eslint-define-config": "^1.5.1",
-    "typescript": "^4.8.2"
+    "eslint": "^8.53.0",
+    "eslint-flat-config-viewer": "^0.1.0",
+    "sucrase": "^3.34.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
   }
 }
