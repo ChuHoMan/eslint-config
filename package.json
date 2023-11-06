@@ -1,7 +1,7 @@
 {
   "name": "@chuhoman/eslint-config",
   "type": "module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "packageManager": "pnpm@7.23.0",
   "description": "ChuHoMan eslint-config",
   "author": "chuhoman",
