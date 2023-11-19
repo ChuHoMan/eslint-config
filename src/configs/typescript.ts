@@ -170,10 +170,7 @@ export function typescript(options?: OptionsComponentExts & OptionsOverrides & O
         'ts/strict-boolean-expressions': 'off',
         'ts/switch-exhaustiveness-check': 'off',
         'ts/triple-slash-reference': 'error',
-        'ts/type-annotation-spacing': ['error', {
-          before: false,
-          after: true,
-        }],
+        'ts/type-annotation-spacing': ['error', {}],
         'ts/typedef': ['error', {
           arrayDestructuring: false,
           arrowParameter: false,

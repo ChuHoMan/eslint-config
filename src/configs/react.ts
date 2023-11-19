@@ -18,7 +18,16 @@ export function react(): FlatESLintConfigItem[] {
     },
     {
       files: [GLOB_JS, GLOB_JSX, GLOB_TS, GLOB_TSX],
-      languageOptions: pluginReact.configs.recommended.languageOptions,
+      languageOptions: {
+        parserOptions: {
+          ecmaVersion: 'latest',
+          parser: '@typescript-eslint/parser',
+          sourceType: 'module',
+          ecmaFeatures: {
+            jsx: true,
+          },
+        },
+      },
       rules: {
         ...reactRules,
 
