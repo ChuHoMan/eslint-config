@@ -9,6 +9,9 @@ const { chuhoman } = require('./src/index.ts');
 export default chuhoman(
   {
     typescript: true,
+    ignores: [
+      'fixtures',
+    ],
   },
   {
     files: ['src/**/*.ts'],
